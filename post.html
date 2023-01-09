@@ -47,7 +47,7 @@
 
     <!-- Jumbotron -->
     <div class="p-5 text-center bg-light" style="margin-top: 58px;">
-      <h1 class="my-1 h4">Tutuł artykułu</h1>
+      <h1 class="my-1 h4">Travel Blog</h1>
     </div>
     <!-- Jumbotron -->
   </header>
@@ -58,68 +58,15 @@
       <div class="row">
         <div class="col-lg-8 mb-4">
           <!-- Post Data -->
-          <!-- OK sa dwie wersje:
-          Wszystko jest od 1 do 5 ZAWSZE!
-          m - margines 
-          mb, mt, mr, ml: margines z kazdej strony. Mozesz tez zrobic:
-          m-5 i wtedy jest z kazdej strony po 5. Nie musisz podawac ktorejs ze stron.
+          <section id="post">
+            <img src="/img/1.jpeg" alt="Landscape" class="img-fluid shadow-2-strong rounded mb-4" />
 
-          "To co bylo takim kolorem to jest margines :) "
-
-          p - padding 
-          TO SAMO CO POWYZEJ
-
-          On robi podobnie ale wgłąb. Nie wiem jak Ci to wytlumaczyc do konca. Ale jest to cos podobnego jak margines :)
-
-          I teraz tak. Jak wstawiłaś w class="pb-5" to on dodatkowo zrobił padding dla całego div. Dlatego nie było tam miejsca i tekst został od razu
-          przeniesiony na dół. Bo zgodnie z zasadą moze byc tylko 12. ale padding dodal troche i bylo powyzej. :) 
-
-          Rozumiesz ? 
-          mysle ze tak
-          musze przesledzic co ten gosciu robil bo wydaje mi sie ze pisalam to co on
-
-
-          ok, co ja zawuzylem to.
-
-          Zwracaj uwage na zamykanie div, section itd. jesli cos jest poza lub sie wlasnie wyswietla w taki dziwny sposob to znaczy, ze najprawdopodobniej
-          gdziej czegosnie zamknelas lub nie jest w div i jest sam. 
-
-          druga sprawa. Nie moze byc takich spacji w plikach jak bylo w post .html! :) 
-
-          Po lewej stronie masz zawsze te dziubki. zobacz sobie czy jak zamkniesz to wszystko zostanie schowane
-
-          Co do tego dodatku naciskasz FN i F1 
-          On teoretycznie ulozy wszystko tak jak powinno wygladac. teoretycznie. 
-
-          Cos jeszcze? 
-          Tak
-         Kocham Cie!!!
-         Ja ciebie tez :) 
-
-         Lubei tobie pomagac
-         Moge to kocham Cie wrzucic na tego bloga?
-         TAK!!!!!!
-         zajebosty mamy komunikator...\\
-
-         :D 
-
-         OK, to ucz sie dale, 
-
-         aaa
-
-         
-
-         poczekaj zobacze czy teraz moge pobrac twoje zmiany :) 
-          -->
-          <section id="post" class="border-bottom p-5">
-            <img class="img-fluid shadow-1-strong rounded m-4" src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
-              alt="Wild Landscape" />
             <div class="row align-items-center mb-4">
-              <div class="col-md-6 text-center text-lg-left mb-3 m-lg-0">
+              <div class="col-md-6 text-lg-left mb-3 m-lg-0">
                 <img src="/img/a.jpeg" alt="Avatar" class="rounded shadow-1-strong mr-2" height="35" />
-                <span>Publikowane <u>07.12.2023</u> by</span> <a href="#" class="text-dark">Madzia</a>
+                <span>Published <u>07.12.2023</u> by</span> <a href="#" class="text-dark">Madzia</a>
               </div>
-              <div class="col-md-6 text-center text-lg-right">
+              <div class="col-md-6 text-right">
                 <!-- Facebook -->
                 <a class="btn text-white px-3 mr-1" style="background-color: #3b5998;" href="#!" role="button">
                   <i class="fab fa-facebook-f"></i>
@@ -224,23 +171,122 @@
               </div>
             </div>
 
+            <!-- Comments -->
+            <div class="row">
+              <div class="col-2">
+                <img src="/img/d.jpeg" alt="Author Avatar" class="img-fluid shadow-1-strong rounded" />
+              </div>
+              <div class="col-10">
+                <p class="mb-2"><strong>Iga Magellan</strong></p>
+                <p class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum laboriosam excepturi
+                  fuga
+                  nihil, distinctio a vitae explicabo quae voluptate minus libero consequatur impedit at praesentium
+                  eius!
+                  Assumenda eveniet necessitatibus labore.</p>
+              </div>
+            </div>
+
+            <!-- Comments -->
+            <div class="row">
+              <div class="col-2">
+                <img src="/img/e.jpeg" alt="Author Avatar" class="img-fluid shadow-1-strong rounded" />
+              </div>
+              <div class="col-10">
+                <p class="mb-2"><strong>Eleonora Diego</strong></p>
+                <p class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum laboriosam excepturi
+                  fuga
+                  nihil, distinctio a vitae explicabo quae voluptate minus libero consequatur impedit at praesentium
+                  eius!
+                  Assumenda eveniet necessitatibus labore.</p>
+              </div>
+            </div>
+
           </section>
+          <!-- Comments -->
+          <!-- Reply -->
+          <section id="reply">
+            <p class="text-center">
+              <string>Leave a reply</string>
+            </p>
+            <form>
+              <!-- Name input -->
+              <div class="form-outline mb-4">
+                <input type="text" id="form4Example1" class="form-control" />
+                <label class="form-label" for="form4Example1">Name</label>
+              </div>
+
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form4Example2" class="form-control" />
+                <label class="form-label" for="form4Example2">Email address</label>
+              </div>
+
+              <!-- Message input -->
+              <div class="form-outline mb-4">
+                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                <label class="form-label" for="form4Example3">Message</label>
+              </div>
+
+              <!-- Checkbox -->
+              <div class="form-check d-flex justify-content-center mb-4">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+                <label class="form-check-label" for="form4Example4">
+                  Send me a copy of this comment
+                </label>
+              </div>
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+            </form>
+          </section>
+          <!-- Reply -->
+        </div>
+        <div class="col-lg-4 mb-4">
+          <!-- Sidebar -->
+          <section id="sidebar">
+            <div class="bg-image ripple mb-4" data-mdb-ripple-color="light">
+              <img src="/img/f.jpeg" class="Beach" height="350" />
+              <a href="#!">
+                <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <p class="text-white mb-0">Can you see me?</p>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+                </div>
+
+              </a>
+            </div>
+            <div class="bg-image ripple" data-mdb-ripple-color="light">
+              <img src="/img/g.jpeg" class="Piramidy" height="350" />
+              <a href="#!">
+                <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <p class="text-white mb-0">Can you see me?</p>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+                </div>
+
+              </a>
+            </div>
+
+          </section>
+          <!-- Sidebar -->
         </div>
       </div>
+      </main>
 
-      <!-- Comments -->
-    </div>
-    <div class="col-lg-4 mb-4">
 
-    </div>
-  </div>
-  </div>
-  <!-- Main Layout -->
+      <!-- Main Layout -->
 
-  <!-- MDB -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Custom scripts -->
-  <script type="text/javascript"></script>
+
+      <!-- MDB -->
+      <script type="text/javascript" src="js/mdb.min.js"></script>
+      <!-- Custom scripts -->
+      <script type="text/javascript"></script>
 </body>
 
 </html>
